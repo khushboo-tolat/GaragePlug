@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>HOME</title>
+          <link rel="icon" href="images/logo.svg">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <link rel="stylesheet" type="text/css" href="css/home.css">
+
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+          <script type="text/javascript" src="js/main.js"></script>
+     </head>
+
+     <body ng-app="myApp" ng-controller="homeCtrl">
+          <section class="top">
+               <div class="logo">
+                    <img src="images/logo.svg">
+                    <div class="company-info">
+                         <p class="company-name">GaragePlug</p>
+                         <p class="caption">Detailing Center</p>
+                    </div>
+               </div>
+          </section>
+
+          <section class="bottom">
+               <div class="service-div">
+                    <button class="service-button" ng-click="redirect()">Select Services</button>
+               </div>
+          </section>
+     </body>
+</html>

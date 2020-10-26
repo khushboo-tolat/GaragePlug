@@ -1,0 +1,56 @@
+html, body{
+     height: 100%;
+     margin: 0;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.top{
+     background-color: #EDEBDF;
+     height: 370px;
+}
+
+.logo{
+     width: 40%;
+     margin: auto;
+     display: flex;
+     flex-direction: row;
+     padding-top: 5%;
+}
+
+.logo img{
+     width: 220px;
+}
+
+.company-info{
+     padding-left: 10px;
+}
+
+.company-name{
+     font-size: 50px;
+     font-weight: bolder;
+     text-align: right;
+}
+
+.caption{
+     font-size: 22px;
+     font-style: italic;
+     text-transform: uppercase;
+     text-align: right;
+}
+
+.service-div{
+     width: 20%;
+     margin: auto;
+     text-align: center;
+     padding-top: 10%;
+}
+
+.service-button{
+     background-color: white;
+     color: dimgray;
+     font-size: 20px;
+     border: 2px solid dimgray;
+     text-transform: uppercase;
+     border-radius: 3px;
+     padding: 10px 25px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>PRICE</title>
+          <link rel="icon" href="images/logo.svg">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <link rel="stylesheet" type="text/css" href="css/car-repair.css">
+
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+          <script type="text/javascript" src="js/main.js"></script>
+     </head>
+     <body ng-app="myApp" ng-controller="mainCtrl">
+          <header>
+               <div class="logo">
+                    <img src="images/logo.svg">
+                    <span>GaragePlug</span>
+               </div>
+          </header>
+
+          <section class="content">
+               <h1>PRICE</h1>
+
+               <div>
+                    <h2> Selected Services </h2>
+                    <div class="price-content">
+                         <div class="main">
+                              <div class="card" ng-repeat="data in service_data" ng-if="data.select">
+                                   <div class="card-img" ng-click="select_service(data.id)" style="background-color: #F3F3F3;">
+                                        <img ng-src="images/{{ data.image }}">
+                                   </div>
+                                   <span> {{ data.name }} </span>
+                              </div>
+                         </div>
+                         <div class="change-button">
+                              <button class="continue-button" ng-click="change_service()">Change</button>
+                         </div>
+                    </div>
+               </div>
+
+               <div>
+                    <h2> Selected Services </h2>
+                    <div class="main">
+                         <div class="card" ng-repeat="data in size_data"ng-if="data.id == size">
+                              <div class="card-img" ng-click="select_size(data.id)" style="background-color: #F3F3F3;">
+                                   <img ng-src="images/{{ data.image }}">
+                              </div>
+                              <span> {{ data.name }} </span>
+                         </div>
+                    </div>   
+               </div>
+
+               <hr/>
+
+               <div class="price-section">
+                    <div class="price-heading">TOTAL PRICE</div>
+                    <div class="price">XXX AED</div>
+               </div>
+
+               <div class="div-button">
+                    <button class="continue-button" ng-click="price_redirect()">Continue</button>
+               </div>
+          </section>
+     </body>
+</html>

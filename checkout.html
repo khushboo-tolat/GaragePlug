@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>CHECKOUT</title>
+          <link rel="icon" href="images/logo.svg">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <link rel="stylesheet" type="text/css" href="css/contact.css">
+
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+          <script type="text/javascript" src="js/main.js"></script>
+     </head>
+     <body ng-app="myApp" ng-controller="checkoutCtrl">
+          <header>
+               <div class="logo">
+                    <img src="images/logo.svg">
+                    <span>GaragePlug</span>
+               </div>
+          </header>
+
+          <section class="content">
+               <h1>CHECKOUT</h1>
+
+               <h2>Service Details</h2>              
+               <div class="details">
+                    <p><span>Service: </span> {{ service }}.</p>
+                    <p><span>Size: </span> {{ size }}.</p>
+               </div>
+
+               <hr/>
+
+               <h2>Customer Details</h2>
+               <div class="details">
+                    <p><span>Name: </span> {{ cust.first_name }} {{ cust.last_name }}</p>
+                    <p><span>Email: </span> {{ cust.email }}</p>
+                    <p><span>Mobile: </span> {{ cust.mobile }}</p>
+               </div>
+
+               <hr/>
+
+               <h2>Payment Details</h2>   
+               <div class="details">
+                    <p><span>Payement Type: </span> {{ type }}.</p>
+               </div>
+
+               <hr/>
+
+               <div class="price-section">
+                    <div class="price-heading">TOTAL PRICE</div>
+                    <div class="price">XXX AED</div>
+               </div>
+
+               <div class="div-button">
+                    <button class="continue-button" ng-click="checkout_redirect()">MAKE PAYMENT</button>
+               </div>
+          </section>
+     </body>
+</html>
